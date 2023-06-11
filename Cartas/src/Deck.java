@@ -43,19 +43,13 @@ public class Deck
 
     public void hand() {
         System.out.println("Draw de tu mano de cartas: " );
-        if (deck.size()<5)
-        {
-            System.out.println("Sin cartas suficientes");
-        }
-        else
-        {
             System.out.println(deck.get(0).toString());
             System.out.println(deck.get(1).toString());
             System.out.println(deck.get(2).toString());
             System.out.println(deck.get(3).toString());
             System.out.println(deck.get(4).toString());
             deck.subList(0,5).clear();
-        }
+
         System.out.println("Quedan " + deck.size()+ " cartas");
     }
 }
